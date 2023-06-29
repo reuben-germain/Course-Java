@@ -26,7 +26,7 @@
 
         <!--Menu items-->
         <div class="menu">
-            <div class="item"><a href=""><i class="fa-solid fa-desktop"></i>Java Beginner
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-desktop"></i>Java Beginner
             <!--dropdown 01-->
             <!--dropdown arrow-->
             <i class="fa-solid fa-arrow-right dropdown"></i>
@@ -45,7 +45,7 @@
             </div>
             
 
-            <div class="item"><a href=""><i class="fa-solid fa-table"></i>Maven</a>
+            <div class="item"><a class="sub-btn"><i class="fa-solid fa-table"></i>Maven</a>
             
             <!--dropdown 02-->
             <!--dropdown arrow-->
@@ -84,6 +84,10 @@
                 $('.menu-btn').css("visibility", "visible");
             });
             //jquery for toggle sub menus
+            $('.sub-btn').click(function(){
+                $('this').next('.sub-menu').slideToggle();
+                $(this).find('.dropdown').toggleClass('rotate');
+            });
         })
     </script>
 </body>

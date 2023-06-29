@@ -1,0 +1,43 @@
+/*Root & Body*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: white;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Menu Button*/
+.menu-btn{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+/*Sidebar*/
+.side-bar{
+    background: #1b1ab1;
+    backdrop-filter: blur(15px);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+.side-bar::-webkit-scrollbar{
+    width: 0px;
+}
+.side-bar .active{
+    left: 0;
+}

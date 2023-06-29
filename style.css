@@ -86,3 +86,9 @@ header h1 {
 .side-bar.active {
     left: 0;
 }
+.side-bar::-webkit-scrollbar{
+    width: 0px;
+}
+.item .sub-menu a{
+    padding-left: 80px;
+}
