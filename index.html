@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--menu button-->
+    <div class="menu-btn">
+        <i class="fa-solid fa-square-xmark"></i>
+    </div>
     <div class="side-bar">
         <!--header section-->
         <header>
             <!--close button-->
             <div class="close-btn">
-                <i class="fas fa-times"></i>
+                <i class="fa-regular fa-square-xmark"></i>
             </div>
             <img src="RG HeadshotPic.jpg" alt="My Picture">
             <!--logo-->
@@ -22,8 +26,41 @@
 
         <!--Menu items-->
         <div class="menu">
-            <div class="item"><a href=""><i class="fa-solid fa-desktop"></i>Java Beginner</a></div>
-            <div class="item"><a href=""><i class="fa-solid fa-table"></i>Maven</a></div>
+            <div class="item"><a href=""><i class="fa-solid fa-desktop"></i>Java Beginner
+            <!--dropdown 01-->
+            <!--dropdown arrow-->
+            <i class="fa-solid fa-arrow-right dropdown"></i>
+            </a>
+
+            <div class="sub-menu">
+                <a href="" class="sub-item">What is Java?</a>
+                <a href="" class="sub-item">Installation</a>
+                <a href="" class="sub-item"></a>
+                <a href="" class="sub-item"></a>
+                <a href="" class="sub-item"></a>
+                <a href="" class="sub-item"></a>
+                <a href="" class="sub-item"></a>
+                <a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a><a href="" class="sub-item"></a>
+            </div>
+            </div>
+            
+
+            <div class="item"><a href=""><i class="fa-solid fa-table"></i>Maven</a>
+            
+            <!--dropdown 02-->
+            <!--dropdown arrow-->
+            <i class="fa-solid fa-arrow-right dropdown"></i>
+        </a>
+        
+        <div class="sub-menu">
+            <a href="" class="sub-item"></a>
+            <a href="" class="sub-item"></a>
+            <a href="" class="sub-item"></a>
+            <a href="" class="sub-item"></a>
+            <a href="" class="sub-item"></a>
+        </div>
+        </div>
+            </div>
             <div class="item"><a href=""><i class="fa-solid fa-vials"></i>Testing (Foundation)</a></div>
             <div class="item"><a href=""><i class="fa-solid fa-gear"></i>Java Intermediate</a></div>
             <div class="item"><a href=""><i class="fa-brands fa-java"></i>Spring Boot</a></div>
@@ -31,5 +68,23 @@
             <div class="item"><a href=""><i class="fa-solid fa-newspaper"></i>IDE Cheatsheet</a></div>
         </div>
     </div>
+
+    <!--Jquery CDN link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //jquery for expand and collapse the sidebar
+            $('.menu-btn').click(function(){
+                $('.side-bar').addClass('active');
+                $('.menu-btn').css("visibility", "hidden");
+            });
+            // for close button
+            $('.close-btn').click(function(){
+                $('.side-bar').removeClass('active');
+                $('.menu-btn').css("visibility", "visible");
+            });
+            //jquery for toggle sub menus
+        })
+    </script>
 </body>
 </html>
