@@ -1,0 +1,32 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+body {
+    min-height: 100vh;
+    background: white;
+    background-size: cover;
+    background-position: center;
+}
+.side-bar {
+    background: #1b1a1b;
+    width: 250px;
+    height: 100vh;
+}
+
+
+
+.menu .item {
+    position: relative;
+    cursor: pointer;
+}
+.menu .item a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
